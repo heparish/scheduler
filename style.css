@@ -30,6 +30,10 @@ textarea {
   white-space: pre-wrap;
 }
 
+mark {
+  background-color: aliceblue;
+}
+
 .schedulerDiv{   
   border-radius: 25px;
   box-shadow: 2px black;
@@ -99,7 +103,6 @@ textarea {
   opacity: 1;
   right: 0;
 }
-
 @media screen and (max-width: 767px) {       
 
   .jumbotron{
@@ -111,7 +114,6 @@ textarea {
   } 
 
 }
-
 @media screen and (max-width: 400px) {
 
   .jumbotron{
