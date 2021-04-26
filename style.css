@@ -13,6 +13,11 @@ textarea {
   padding: 10px;
 }
 
+.jumbotron-holder {
+  background: url(https://wallpapercave.com/wp/wp5442998.jpg) no-repeat center;
+  background-size: cover;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -23,6 +28,11 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+}
+
+.schedulerDiv{   
+  border-radius: 25px;
+  box-shadow: 2px black;
 }
 
 .time-block {
@@ -65,7 +75,57 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+.saveBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.saveBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.saveBtn:hover span {
+  padding-right: 25px;
+}
+
+.saveBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {       
+
+  .jumbotron{
+      height: 300px;
+      
+  }
+   p{
+      font-size: smaller;
+  } 
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .jumbotron{
+      height: 300px;
+      
+  }
+ 
+  .hourC{
+      margin-right: 0px;
+
+  }
+  
+  .spanBttn{
+      border-radius: 25px;
+  }
+ 
 }
